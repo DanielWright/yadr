@@ -90,7 +90,8 @@ function prompt_skwp_setup {
   zstyle ':vcs_info:*:prompt:*' formats       "${fmt_branch}"
   zstyle ':vcs_info:*:prompt:*' nvcsformats   ""
 
-  PROMPT="${__PROMPT_SKWP_COLORS[3]}%n%f@${__PROMPT_SKWP_COLORS[2]}%m%f ${__PROMPT_SKWP_COLORS[5]}%~%f "'${vcs_info_msg_0_}'"$ "
+  PROMPT="${__PROMPT_SKWP_COLORS[3]}@${__PROMPT_SKWP_COLORS[2]}%m%f ${__PROMPT_SKWP_COLORS[5]}%~%f "'${vcs_info_msg_0_}'"$ "
+  PROMPT="${__PROMPT_SKWP_COLORS[5]}%~%f "'${vcs_info_msg_0_}'"$ "
   RPROMPT="%F{blue}"'$(rvm_info_for_prompt)'""
 }
 
