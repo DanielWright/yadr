@@ -1,0 +1,1 @@
+let g:ctrlp_custom_ignore = 'tmp/cache$\|\.bundle$\|\.git$\|\.hg$\|\.svn$'
